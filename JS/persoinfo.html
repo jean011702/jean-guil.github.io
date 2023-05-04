@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:pink;
+                color:darkblue;
+            }
+
+        </style>
+    </head>
+
+<body>
+    <center>
+        <h1>Personal Info.</h1>
+        <table>
+            First Name: <input id="fname"><br><br>
+            Last Name: <input id="lname"><br><br>
+            Birth Year: <input id="byear"><br><br>
+
+            <button onclick="sub()">SUBMIT</button>
+            <br><br>
+            First Name is pressed <span id="wordCount">0</span> Times <br>
+            Your age is <span id="byear1">0</span>
+        </table>
+    </center>
+    <script>
+        var fname = document.getElementById("fname");
+        var wordCount = document.getElementById("wordCount");
+
+        fname.addEventListener("keyup", function () {
+            var characters = fname.value.split('');
+            wordCount.innerText = characters.length;
+        });
+        function sub() {
+            alert("Your Information is Saved")
+        }
+        var byear = document.getElementById("byear");
+        var byear1 = document.getElementById("byear1");
+        var y = 2023
+
+        byear.addEventListener("keyup", function () {
+            var val = byear.value;
+            byear1.innerText = (y - val);
+        });
+    </script>
+</body>
+
+</html>

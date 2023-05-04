@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: #fccf47;
+}
+.j{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    position: relative;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color:blue;
+}
+nav ul li a:active{
+    color: blueviolet;
+}
+.pp{
+    margin-left: 8%;
+    margin-top: 3%;
+}
+.pp h1{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+span{
+    color: purple;
+}
+.pp p{
+    color:fuchsia;
+    line-height: 22px;
+}
+.pp a{
+    background: magenta;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    display: inline-block;
+    margin: 3opx 0;
+    border-radius: 5px;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom, left;
+}
+/* --------------------About------------- */
+#about{
+    padding: 80px 0;
+    color:black;
+    text-align: center;
+}
+.con{
+   position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pic1{
+    flex-basis: 35%;
+}
+.pic1 img{
+    width: 50%;
+    border-radius: 15px;
+    background-color: black;
+}
+.pic2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.t{
+    font-size: 120%;
+    font-style: italic;
+
+}
+/* -------------------Skills----------------- */
+#skills{
+    padding: 30px 0;
+}
+.title{
+    font-size: 60px;
+    font-weight: 500;
+    color: blue;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+.skills-list div{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+}
+.f{
+    font-style: italic;
+   font-size: 200%;
+   color: black;
+}
+/* ----------------------activities--------------------- */
+#act{
+    padding: 30px 0;  
+}
+.tit{
+    font-size: 60px;
+    font-weight: 500;
+    color: red;
+}
+.act-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.activities JS{
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.activities JS img{
+    height: 10px;
+    max-width: fit-content
+}
+h5 .tit1{
+    display:grid;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+h5{
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: blue;
+}
+h6 .tit2{
+    display:grid;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+h6{
+    
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: fuchsia;
+}
+.tact{
+    color: red;
+    font-size: 50px;
+}
+.p{
+    font-style: italic;
+    text-align: center;
+}
+.o{
+    padding-left: 335px;
+    position: absolute;
+    
+}
+#home{
+    background: #4feob6;
+    width: 100%;
+    height: 100vh;
+}
+#about{
+    background: #fccf47;
+}
+
+#skills{
+    background: #24afc1;
+}
+#activities{
+    background:#fccf47;
+}
+#contact{
+    background:  #24afc1;
+}

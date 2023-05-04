@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: lightskyblue;
+            color:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input {
+            border: 2px lightblue;
+            width: 100px;
+            padding: 5px 20px;
+            border-radius: 50px;
+            text-align: center;
+            color: black;
+            font-size: 15px;
+        }
+        input:hover{
+            background-color: black;
+            color:whitesmoke;
+        }
+        button {
+            background-color: fuchsia;
+            color: aquamarine;
+        }
+        button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        .border {
+            border: 5px solid black; 
+            padding: 30px;
+            width: 300px;    
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="border">
+        <h1>Personal Info</h1>
+        <table>
+            <input id="myFirst" type="text" placeholder="First Name" onkeydown="count()" /><br><br>
+            <input id="myLast" type="text" placeholder="Last Name" onkeydown="count()" /><br><br>
+            <input id="myBirth" type="text" placeholder="Birth Name" /><br><br>
+
+            <button onclick="sub()">Submit</button><br><br>
+            First Name is pressed <span id="count">0</span> Times <br>
+            Your age is <span id="myBirth1">0</span>
+            
+        </table>
+        </div>
+    </center>
+    <script>
+
+        function count() {
+            var count = document.getElementById("count").innerHTML;
+
+            document.getElementById("count").innerHTML = Number(count) + 1;
+        }
+        function sub() {
+            alert("Your Information is Saved")
+        }
+        var myBirth = document.getElementById("myBirth");
+        var myBirth1 = document.getElementById("myBirth1");
+        var y = 2023;
+         
+
+        myBirth.addEventListener("keyup", function () {
+            var val = myBirth.value;
+            myBirth1.innerText = (y - val);
+        });
+    </script>
+</body>
+
+</html>
